@@ -1,7 +1,7 @@
+// Using Vanilla JS for all script // 
 // Variables to not be reassigned // 
 const appId = '8a595c36a18b2738713e53c678c45e59';
 const units = 'imperial';
-
 // remove "zip" after log completes // 
 const searchMethod = 'zip';
 
@@ -15,7 +15,7 @@ function searchWeather(searchTerm){
 }
 
 function init(resultFromServer) {
-    console.log(resultFromServer);
+    // console.log(resultFromServer.list);
 }
 // click function for search button // 
 document.getElementById('searchBtn').addEventListener('click', () =>{
