@@ -26,7 +26,7 @@ function searchWeather(searchTerm){
 
 function init(resultFromServer) {
     // parsing JSON to get background for weather currently happening with switch statement to each case // 
-    // console.log(resultFromServer);
+    // results from server for first 5 in array for forecast // 
     switch(resultFromServer.weather[0, 1, 2, 3, 4].main){
         case 'Clear':
             break;
@@ -36,7 +36,7 @@ function init(resultFromServer) {
         case 'Rain':
         case 'Drizzle':
         case 'Mist':
-            
+
             break;
         case '':
         default:
