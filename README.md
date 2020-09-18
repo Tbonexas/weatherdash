@@ -20,4 +20,22 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history  
 THEN I am again presented with current and future conditions for that city  
 WHEN I open the weather dashboard  
-THEN I am presented with the last searched city forecast  
+THEN I am presented with the last searched city forecast 
+
+
+Working Weather Dashboard link:   [WeatherDash](https://tbonexas.github.io/weatherdash/)
+
+Demo:    
+![w22](https://user-images.githubusercontent.com/67118229/93568543-2d856d00-f945-11ea-9eea-4bff8efee3b7.gif)
+
+
+
+In this assignment I used:  
+Open Weather API  
+Bootstrap   
+Font Awesome  
+jQuery  
+Moment.js  
+
+Referenced: portEXE tutorials, w3, and stack overflow.
+
