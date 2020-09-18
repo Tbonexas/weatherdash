@@ -3,18 +3,18 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: gray;
+  background: transparent;
 }
 
 .heading {
-  background-color: lightblue;
+  background: transparent;
   color:lightcoral;
   text-align: center;
   padding: 10px;
   font-size: 36px;
 }
 h1 {
-  font-size: 72px;
+  font-size: 88px;
   font-family: 'Passion One', cursive;
   text-shadow: 1.5px 2px 4px black;
 }
@@ -35,11 +35,27 @@ input {
 }
 
 h6 {
+  font-size: 42px;
   font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+  text-shadow: 1px 1.5px 3px black;
+  color: lightcoral;
 }
 
 h4 {
     margin: 5px;
+    font-size: 36px;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 1px 1.5px 3px black;
+    color: lightcoral;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+  text-shadow: 1px 1.5px 3px black;
+  color: lightcoral;
 }
 
 #forecast-cards {
@@ -60,7 +76,7 @@ h4 {
   color:lightcoral;
  
   text-align: center;
-  font-family: 'Suez One', serif;;
+  font-family: 'Suez One', serif;
 }
 
 .github {
