@@ -28,5 +28,12 @@ Working Weather Dashboard link:   [WeatherDash](https://tbonexas.github.io/weath
 Demo:  
 ![github]![w22](https://user-images.githubusercontent.com/67118229/93568543-2d856d00-f945-11ea-9eea-4bff8efee3b7.gif)
 
+In this assignment I used:  
+Open Weather API  
+Bootstrap   
+Font Awesome  
+jQuery  
+Moment.js  
 
+Referenced: portEXE tutorials, w3, and stack overflow.
 
