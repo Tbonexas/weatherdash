@@ -1,14 +1,23 @@
+html {
+  background-image: url(https://mocah.org/uploads/posts/124416-miui-8-rainy-weather-background-minimal-hd.png);
+}
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: gray;
 }
 
 .heading {
-  background-color: #3c3c3c;
-  color: #ffffff;
+  background-color: lightblue;
+  color:lightcoral;
   text-align: center;
   padding: 10px;
+  font-size: 36px;
 }
-
+h1 {
+  font-size: 72px;
+  font-family: 'Passion One', cursive;
+  text-shadow: 1.5px 2px 4px black;
+}
 input {
   width: 75%;
 }
@@ -41,4 +50,19 @@ h4 {
 
 .forecast {
     margin: 10px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightskyblue;
+  color:lightcoral;
+ 
+  text-align: center;
+  font-family: 'Suez One', serif;;
+}
+
+.github {
+  font-size: 24px;
 }

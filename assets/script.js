@@ -20,11 +20,11 @@ function createCityList(citySearchList) {
   
   function populateCityWeather(city, citySearchList) {
     createCityList(citySearchList);
-  
+  // 1st variable to call api from open weather //
     var queryURL =
       "https://api.openweathermap.org/data/2.5/weather?&units=imperial&appid=885e9149105e8901c9809ac018ce8658&q=" +
       city;
-  
+  // 2nd variable to call api from open weather //
     var queryURL2 =
       "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&appid=885e9149105e8901c9809ac018ce8658&q=" +
       city;
@@ -37,25 +37,25 @@ function createCityList(citySearchList) {
       url: queryURL,
       method: "GET"
     })
-      // Store all of the retrieved data inside of an object called "weather"
+      // // Stores all data into weather object//
       .then(function(weather) {
-        // Log the queryURL
+        // log for queryUrl // 
         console.log(queryURL);
   
-        // Log the resulting object
+        // log for result // 
         console.log(weather);
-  
+        // moment js variable // 
         var nowMoment = moment();
-  
+  // generate moment to h3 with empty/append //
         var displayMoment = $("<h3>");
         $("#city-name").empty();
         $("#city-name").append(
           displayMoment.text("(" + nowMoment.format("M/D/YYYY") + ")")
         );
-  
+  // prepend city name to header 3 // 
         var cityName = $("<h3>").text(weather.name);
         $("#city-name").prepend(cityName);
-  
+  // generates images of weather climates // 
         var weatherIcon = $("<img>");
         weatherIcon.attr(
           "src",
@@ -70,7 +70,7 @@ function createCityList(citySearchList) {
   
         latitude = weather.coord.lat;
         longitude = weather.coord.lon;
-  
+  // 3 variable to call API from open weather // 
         var queryURL3 =
           "https://api.openweathermap.org/data/2.5/uvi/forecast?&units=imperial&appid=885e9149105e8901c9809ac018ce8658&q=" +
           "&lat=" +
@@ -81,7 +81,7 @@ function createCityList(citySearchList) {
         $.ajax({
           url: queryURL3,
           method: "GET"
-          // Store all of the retrieved data inside of an object called "uvIndex"
+          // store all into object uvIndex // 
         }).then(function(uvIndex) {
           console.log(uvIndex);
   
@@ -95,12 +95,12 @@ function createCityList(citySearchList) {
           $.ajax({
             url: queryURL2,
             method: "GET"
-            // Store all of the retrieved data inside of an object called "forecast"
+            // Store all data into object forecast // 
           }).then(function(forecast) {
             console.log(queryURL2);
   
             console.log(forecast);
-            // Loop through the forecast list array and display a single forecast entry/time (5th entry of each day which is close to the highest temp/time of the day) from each of the 5 days
+            // Loop through the forecast from each of the 5 days // 
             for (var i = 6; i < forecast.list.length; i += 8) {
               // 6, 14, 22, 30, 38
               var forecastDate = $("<h5>");
@@ -133,10 +133,10 @@ function createCityList(citySearchList) {
               $("#forecast-humidity" + forecastPosition).text(
                 "Humidity: " + forecast.list[i].main.humidity + "%"
               );
-  
+  // changes weather cards background //
               $(".forecast").attr(
                 "style",
-                "background-color:dodgerblue; color:white"
+                "background-color: lightblue; color:black"
               );
             }
           });
@@ -159,7 +159,7 @@ function createCityList(citySearchList) {
     $("#forecast-weather").hide();
   
   
-  
+  // event for click on search button // 
     $("#search-button").on("click", function(event) {
       event.preventDefault();
       var city = $("#city-input")
@@ -168,7 +168,7 @@ function createCityList(citySearchList) {
         .toLowerCase();
   
       if (city != "") {
-        //Check to see if there is any text entered
+        //Checks to see if there is any text entered //
       
         citySearchList[city] = true;
       localStorage.setItem("citySearchList", JSON.stringify(citySearchList));
