@@ -23,12 +23,10 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast 
 
 
-Working planner link:   [Planner](https://tbonexas.github.io/weatherdash/)
+Working Weather Dashboard link:   [WeatherDash](https://tbonexas.github.io/weatherdash/)
 
 Demo:  
 ![github]![w22](https://user-images.githubusercontent.com/67118229/93568543-2d856d00-f945-11ea-9eea-4bff8efee3b7.gif)
 
 
 
-Image:    
-![image](https://user-images.githubusercontent.com/67118229/92775109-f1ee1000-f352-11ea-8ce4-7a07d4eb4fe1.png)
