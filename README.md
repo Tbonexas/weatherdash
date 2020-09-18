@@ -26,7 +26,7 @@ THEN I am presented with the last searched city forecast
 Working planner link:   [Planner](https://tbonexas.github.io/weatherdash/)
 
 Demo:  
-![github](https://user-images.githubusercontent.com/67118229/92774169-0da4e680-f352-11ea-9bac-ab19d05092df.gif)
+![github](https://drive.google.com/file/d/1y_t48FLEmnkCF4yxai-Ru7qF_FGzQAE5/view)
 
 
 
