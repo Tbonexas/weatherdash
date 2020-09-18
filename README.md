@@ -20,4 +20,15 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history  
 THEN I am again presented with current and future conditions for that city  
 WHEN I open the weather dashboard  
-THEN I am presented with the last searched city forecast  
+THEN I am presented with the last searched city forecast 
+
+
+Working planner link:   [Planner](https://tbonexas.github.io/weatherdash/)
+
+Demo:  
+![github](https://user-images.githubusercontent.com/67118229/92774169-0da4e680-f352-11ea-9bac-ab19d05092df.gif)
+
+
+
+Image:    
+![image](https://user-images.githubusercontent.com/67118229/92775109-f1ee1000-f352-11ea-8ce4-7a07d4eb4fe1.png)
